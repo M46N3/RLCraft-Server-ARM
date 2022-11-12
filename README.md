@@ -15,7 +15,7 @@ docker run -dit -e EULA=true -p 25565:25565 m46n3/rlcraft-server
 For saving and loading worlds and configurations attach a volume to the /server/server-data path, like so:
 
 ```shell
-docker run -it -e EULA=true -v rlcraft-server:/server/server-data -p 25565:25565 --name rlcraft  m46n3/rlcraft-server
+docker run -it -e EULA=true -v rlcraft-server:/server/server-data -p 25565:25565 --name rlcraft m46n3/rlcraft-server
 ```
 
 **NOTE**: By providing EULA=TRUE you agree to the EULA at [https://account.mojang.com/documents/minecraft_eula](https://account.mojang.com/documents/minecraft_eula).
