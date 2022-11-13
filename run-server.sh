@@ -41,5 +41,5 @@ java -Xms${RAM:-$DEFAULT_RAM} -Xmx${RAM:-$DEFAULT_RAM} \
 
 if [ -d "world" ] && [ -d "server-data" ]; then
      echo "Copying to volume..."
-     cp -Rfv world mods server.properties ops.json whitelist.json banned-ips.json banned-players.json server-data/
+     cp -Rfv world server.properties ops.json whitelist.json banned-ips.json banned-players.json server-data/
 fi
